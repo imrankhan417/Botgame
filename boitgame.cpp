@@ -1,12 +1,8 @@
-// C++ program to find out
-// maximum value from a given
-// sequence of coins
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Returns optimal value possible
-// that a player can collect from
-// an array of coins of size n.
+
 // Note than n must be even
 int optimalStrategyOfGame(
 	int* arr, int n)
@@ -15,12 +11,7 @@ int optimalStrategyOfGame(
 	// solutions of subproblems
 	int table[n][n];
 
-	// Fill table using above
-	// recursive formula. Note
-	// that the table is filled
-	// in diagonal fashion (similar
-	// to http:// goo.gl/PQqoS),
-	// from diagonal elements to
+	
 	// table[0][n-1] which is the result.
 	for (int gap = 0; gap < n; ++gap) {
 		for (int i = 0, j = gap; j < n; ++i, ++j) {
