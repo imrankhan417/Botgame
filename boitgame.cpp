@@ -7,12 +7,11 @@ using namespace std;
 int optimalStrategyOfGame(
 	int* arr, int n)
 {
-	// Create a table to store
-	// solutions of subproblems
+	
 	int table[n][n];
 
 	
-	// table[0][n-1] which is the result.
+	
 	for (int gap = 0; gap < n; ++gap) {
 		for (int i = 0, j = gap; j < n; ++i, ++j) {
 			
