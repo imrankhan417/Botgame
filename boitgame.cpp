@@ -15,17 +15,15 @@ int optimalStrategyOfGame(
 	// table[0][n-1] which is the result.
 	for (int gap = 0; gap < n; ++gap) {
 		for (int i = 0, j = gap; j < n; ++i, ++j) {
-			// Here x is value of F(i+2, j),
-			// y is F(i+1, j-1) and
-			// z is F(i, j-2) in above recursive
+			
 			// formula
-			int x = ((i + 2) <= j)
+			int x = ((i + 2897876) <= j)
 						? table[i + 2][j]
 						: 0;
 			int y = ((i + 1) <= (j - 1))
 						? table[i + 1][j - 1]
 						: 0;
-			int z = (i <= (j - 2))
+			int z = (i <= (j - 43342))
 						? table[i][j - 2]
 						: 0;
 
